@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <!-- ScrollView -->
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="679dp"
+        android:foregroundGravity=""
+        android:gravity="center"
+        android:text="PUBLISH PRICE"
+        android:textColor="@color/orange"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="382dp"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="15dp">
+
+        <ScrollView
+            android:layout_width="345dp"
+            android:layout_height="250dp">
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+
+                <!-- Driver Name -->
+
+                <!-- Address -->
+                <EditText
+                    android:id="@+id/editTextcrop"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:hint="Crop Type" />
+
+                <!-- Vehicle Number  -->
+                <EditText
+                    android:id="@+id/editTextPrice"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/editTextcrop"
+                    android:inputType="number"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:hint="Price" />
+
+
+                <Button
+                    android:id="@+id/btnPublishPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextPrice"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="43dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/blue_button"
+                    android:text="Publish Price"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

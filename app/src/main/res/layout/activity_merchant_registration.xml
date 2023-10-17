@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".farmer_registration">
+
+    <RelativeLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="190sp"
+        android:background="@drawable/up_shape">
+
+
+
+        <ImageView
+            android:id="@+id/merchantlogo"
+            android:layout_width="132dp"
+            android:layout_height="109dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="149dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="130dp"
+            android:layout_marginBottom="96dp"
+            android:src="@drawable/merchantlogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="112dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="47dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="Merchant Registration"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/merchantnewUserText"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="159dp"
+            android:layout_marginEnd="163dp"
+            android:layout_marginBottom="11dp"
+            android:gravity="center"
+            android:paddingVertical="8sp"
+            android:text="Already Register ?"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/merchantsignInBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="207dp"
+            android:layout_marginTop="161dp"
+
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="11dp"
+            android:background="@android:drawable/list_selector_background"
+            android:gravity="center"
+            android:text="sign_in"
+            android:textColor="@color/green"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="354dp"
+        android:layout_height="700dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="213dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10sp"
+        android:paddingBottom="10sp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10sp">
+
+
+
+
+                <!-- Select Image Button -->
+                <ImageView
+                    android:id="@+id/merchantprofileImage"
+                    android:layout_width="120sp"
+                    android:layout_height="120sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="8sp"
+                    android:src="@android:drawable/ic_menu_gallery" />
+
+                <Button
+                    android:id="@+id/selectImageButton"
+                    android:layout_width="258sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+
+
+                    android:layout_marginStart="11sp"
+                    android:layout_marginTop="41sp"
+                    android:layout_marginEnd="30sp"
+                    android:layout_toEndOf="@+id/merchantprofileImage"
+                    android:text="Select Image" />
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutID"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="35dp"
+                android:layout_below="@+id/selectImageButton"
+                android:hint="Name"
+                app:boxBackgroundMode="outline"
+                app:endIconMode="clear_text"
+                app:endIconTint="#1A237E"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutEmail"
+                app:startIconTint="#1A237E">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/merchantname"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutFuleName"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@+id/layoutID"
+                android:layout_marginTop="9dp"
+                android:hint="NIC"
+                app:boxBackgroundMode="outline"
+                app:counterEnabled="true"
+                app:counterMaxLength="12"
+                app:endIconMode="clear_text"
+                app:endIconTint="#1A237E"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutEmail"
+                app:startIconTint="#1A237E">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/merchantNIC"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutStartPlace"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layoutFuleName"
+                android:layout_marginTop="14dp"
+                android:hint="Contact number"
+                app:boxBackgroundMode="outline"
+                app:counterEnabled="true"
+                app:counterMaxLength="10"
+                app:endIconMode="clear_text"
+                app:endIconTint="#1A237E"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutEmail"
+                app:startIconTint="#1A237E">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/merchantNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:inputType="phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutEmail"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@+id/layoutStartPlace"
+                android:layout_marginTop="5dp"
+                android:hint="Email"
+                app:boxBackgroundMode="outline"
+                app:endIconMode="clear_text"
+                app:endIconTint="#1A237E"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutFuleName"
+                app:startIconTint="#1A237E">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/merchantEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/layoutLicenceNo"
+                    android:layout_marginTop="9dp"
+                    android:inputType="textWebEmailAddress|text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutcity"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@+id/layoutEmail"
+                android:layout_marginTop="5dp"
+                android:hint="City"
+                app:boxBackgroundMode="outline"
+                app:endIconMode="clear_text"
+                app:endIconTint="#1A237E"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutStartPlace1"
+                app:startIconTint="#1A237E">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/merchantCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/layoutEmail"
+                    android:layout_marginTop="9dp"
+                    android:inputType="textWebEmailAddress|text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutStartPlace1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutcity"
+                android:layout_marginTop="12dp"
+                android:hint="Password"
+                app:boxBackgroundMode="outline"
+                app:counterEnabled="true"
+                app:counterMaxLength="10"
+                app:endIconMode="password_toggle"
+                app:endIconTint="#1A237E"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutStartPlace"
+                app:layout_constraintVertical_bias="0.0"
+                app:startIconTint="#1A237E">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/merchantPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:inputType="textPassword" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutConformPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutStartPlace1"
+                android:layout_marginTop="0dp"
+                android:hint="Confirm Password"
+                app:boxBackgroundMode="outline"
+                app:counterEnabled="true"
+                app:counterMaxLength="10"
+                app:endIconMode="password_toggle"
+                app:endIconTint="#1A237E"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutStartPlace"
+                app:layout_constraintVertical_bias="0.0"
+                app:startIconTint="#1A237E">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/merchantConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/merchantregisterButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/layoutConformPassword"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="13sp"
+
+                android:layout_marginTop="113dp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/green_button"
+                android:paddingBottom="10sp"
+                android:text="Register"
+                android:textColor="#ffffff" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".updatemerchant">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="Update Merchant Details "
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="535dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="100dp"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="515dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/merchantname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="115dp"
+                android:layout_marginEnd="18dp"
+                android:background="@android:drawable/editbox_background"
+                android:drawablePadding="16dp"
+                android:hint="Name"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/merchantEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="190dp"
+                android:layout_marginEnd="18dp"
+                android:background="@android:drawable/editbox_background"
+                android:drawablePadding="16dp"
+                android:hint="Email"
+                android:inputType="textWebEmailAddress|text"
+                android:padding="16dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/merchantNIC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/merchantEmail"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginBottom="228dp"
+                android:background="@android:drawable/editbox_background"
+                android:drawablePadding="16dp"
+                android:hint="NIC (National Identification Card)"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/merchantCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="318dp"
+                android:layout_marginEnd="15dp"
+                android:background="@android:drawable/editbox_background"
+                android:drawablePadding="16dp"
+                android:hint="City"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/merchantNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="387dp"
+                android:layout_marginEnd="16dp"
+                android:background="@android:drawable/editbox_background"
+                android:drawablePadding="16dp"
+                android:hint="Contact Number"
+                android:inputType="number"
+                android:padding="16dp"
+                android:textColor="@color/black" />
+
+
+            <!-- Select Image Button -->
+
+            <ImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/merchantNumber"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/circular_image_view"
+                android:src="@android:drawable/ic_menu_gallery" />
+
+
+            <Button
+                android:id="@+id/selectImageButton"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="490dp"
+                android:layout_marginEnd="22dp"
+                android:layout_toEndOf="@+id/profileImageView"
+                android:text="Select Image" />
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_below="@id/selectImageButton"
+                android:layout_marginTop="104dp"
+                android:background="@drawable/green_button"
+                android:text="Save"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

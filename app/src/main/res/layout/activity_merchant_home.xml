@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="7dp"
+    tools:layout_editor_absoluteY="42dp">
+
+
+    <TextView
+        android:id="@+id/mviewUserName"
+        android:layout_width="306dp"
+        android:layout_height="31dp"
+        android:gravity="center_vertical"
+        android:text="NAME!"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardView1"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="1dp"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021">
+
+        <ImageButton
+            android:id="@+id/merchantProfilePicture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/circular_image_view"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.221" />
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="348dp"
+        android:layout_height="585dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/btnViewPost"
+            android:layout_width="145dp"
+            android:layout_height="145dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="185dp"
+            android:background="@drawable/light_background"
+            android:src="@drawable/post"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.948"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.041" />
+
+
+        <TextView
+            android:id="@+id/viewp"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnViewPost"
+            android:layout_alignStart="@+id/btnViewPost"
+            android:layout_alignEnd="@+id/btnViewPost"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="3dp"
+            android:gravity="center"
+            android:text="View Post"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.266"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022" />
+
+        <ImageButton
+            android:id="@+id/btnViewPrice"
+            android:layout_width="145dp"
+            android:layout_height="145dp"
+            android:layout_below="@+id/btnViewPost"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="189dp"
+            android:layout_marginTop="-144dp"
+            android:layout_marginEnd="13dp"
+            android:background="@drawable/light_background"
+            android:src="@drawable/pprice"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.948"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.041" />
+
+
+        <TextView
+            android:id="@+id/viewpri"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnViewPrice"
+            android:layout_alignStart="@+id/btnViewPrice"
+            android:layout_alignEnd="@+id/btnViewPrice"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="13dp"
+            android:gravity="center"
+            android:text="View Price"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.266"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022" />
+
+        <ImageButton
+            android:id="@+id/btnFarmer"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_below="@+id/btnViewPrice"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="91dp"
+            android:layout_marginEnd="42dp"
+            android:background="@drawable/light_background"
+            android:src="@drawable/farmer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.948"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.041" />
+
+
+        <TextView
+            android:id="@+id/farmers"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnFarmer"
+            android:layout_alignStart="@+id/btnFarmer"
+            android:layout_alignEnd="@+id/btnFarmer"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="64dp"
+            android:gravity="center"
+            android:text="Farmers"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.266"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="635dp"
+        android:background="@color/dark_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_navigation"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

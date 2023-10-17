@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:padding="2dp">
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="15dp"
+        android:elevation="4dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/textViewCrop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Crop:" />
+
+            <!-- Price -->
+            <TextView
+                android:id="@+id/textViewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Price Per Kg:" />
+
+            <!-- Validity Date -->
+            <TextView
+                android:id="@+id/textViewValidityDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Validity Date:"
+                android:textStyle="bold" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+
+                <Button
+                    android:id="@+id/buttonUpdatePost"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="3dp"
+                    android:background="@drawable/blue_button"
+                    android:drawableLeft="@drawable/update_icon"
+                    android:drawablePadding="1dp"
+                    android:text="Update"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonDelete"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/red_button"
+                    android:drawableLeft="@drawable/delete_icon"
+                    android:drawablePadding="1dp"
+                    android:text="Delete"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

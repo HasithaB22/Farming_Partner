@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "880391030981",
+    "firebase_url": "https://farmingpartner-20bde-default-rtdb.firebaseio.com",
+    "project_id": "farmingpartner-20bde",
+    "storage_bucket": "farmingpartner-20bde.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880391030981:android:5a6ba1397b8ef0c0cfc8ac",
+        "android_client_info": {
+          "package_name": "com.example.farming_partner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "880391030981-vad6pnfehkjjropj4bfg0rdp70g2rm17.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7aZBk2uOzlgQQQMKnnUz0FRY_UmJUz2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "880391030981-vad6pnfehkjjropj4bfg0rdp70g2rm17.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

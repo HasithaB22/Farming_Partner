@@ -4,13 +4,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class home extends AppCompatActivity {
 
-    private Button btnFarmer;
-    private Button btnMerchant;
+    private ImageButton btnFarmer;
+    private ImageButton btnMerchant;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

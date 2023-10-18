@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
@@ -54,7 +56,7 @@ public class PostListActivity extends AppCompatActivity implements PostAdapter.O
         searchResultsFragment = new SearchResultsFragment();
 
         // Handle search button click
-        Button searchButton = findViewById(R.id.buttonSearch);
+        ImageButton searchButton = findViewById(R.id.buttonSearch);
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,7 +65,7 @@ public class PostListActivity extends AppCompatActivity implements PostAdapter.O
         });
 
         // Handle clear button click
-        Button clearButton = findViewById(R.id.buttonClear);
+        ImageButton clearButton = findViewById(R.id.buttonClear);
         clearButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

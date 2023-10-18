@@ -46,7 +46,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
         Post post = postList.get(position);
 
         holder.textViewCrop.setText("Crop: " + post.getCrop());
-        holder.textViewCapacity.setText("Quantity: " + post.getquantity());
+        holder.textViewCapacity.setText("Quantity: " + post.getquantity() + " KG");
         holder.textViewNegotiable.setText("Negotiable: " + (post.isNegotiable() ? "Yes" : "No"));
         holder.textViewFarmerName.setText("Farmer Name: " + post.getFarmerName());
         holder.textViewContactNumber.setText("Contact Number: " + post.getContactNumber());
